@@ -1,8 +1,15 @@
 [package]
 name = "russenger_macro"
 version = "0.1.0"
+description = "Proc macro for creating new action on Russenger lib"
 edition = "2021"
-publish = true
+license = "Apache-2.0"
+documentation = "https://docs.rs/russenger/latest/russenger_macro/"
+homepage = "https://github.com/j03-dev/russenger_macro"
+repository = "https://github.com/j03-dev/russenger_macro"
+# Author information
+authors = ["FITAHIANA Nomeniavo Joe <24nomeniavo@gmail.com>"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,6 +19,6 @@ path = "src/lib.rs"
 proc-macro = true
 
 [dependencies]
-proc-macro2 = "1.0.82"
-quote = "1.0.36"
-syn = { version = "2.0.63", features = ["full"] }
+proc-macro2 = "^1.0.82"
+quote = "^1.0.36"
+syn = { version = "^2.0.63", features = ["full"] }
