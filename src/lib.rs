@@ -41,7 +41,7 @@ pub fn action(_attr: TokenStream, item: TokenStream) -> TokenStream {
 
         #[russenger::async_trait]
         impl russenger::Action for #name {
-            async fn execute(&self, res: russenger::prelude::Res, req: russenger::prelude::Req) {
+            async fn execute(&self, res: russenger::prelude::Res, req: russenger::prelude::Req) -> std::io::Result<()> {
                 #body
             }
             fn path(&self) -> String {
