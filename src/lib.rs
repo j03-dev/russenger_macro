@@ -37,6 +37,7 @@ pub fn action(_attr: TokenStream, item: TokenStream) -> TokenStream {
     let body = &input.block;
 
     let expanded = quote! {
+        #[allow(non_camel_case_types)]
         pub struct #name;
 
         #[russenger::async_trait]
